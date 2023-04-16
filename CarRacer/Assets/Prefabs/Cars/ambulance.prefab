@@ -309,7 +309,7 @@ WheelCollider:
     targetPosition: 0.5
   m_SuspensionDistance: 0.02
   m_ForceAppPointDistance: 0.15
-  m_Mass: 20
+  m_Mass: 100
   m_WheelDampingRate: 0.25
   m_ForwardFriction:
     m_ExtremumSlip: 0.4
@@ -421,6 +421,7 @@ GameObject:
   - component: {fileID: -5002258954115835095}
   - component: {fileID: -2155802852515213941}
   - component: {fileID: 2158668559925950455}
+  - component: {fileID: 8431685848276069650}
   m_Layer: 0
   m_Name: ambulance
   m_TagString: Untagged
@@ -498,10 +499,24 @@ BoxCollider:
   m_GameObject: {fileID: 3513451460590605068}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 0.26221344, y: 0.30810115, z: 0.40609592}
-  m_Center: {x: 0, y: 0.20898579, z: -0.0104730725}
+  m_Size: {x: 0.26221344, y: 0.24055836, z: 0.40609592}
+  m_Center: {x: 0, y: 0.24275719, z: -0.0104730725}
+--- !u!136 &8431685848276069650
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3513451460590605068}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.09
+  m_Height: 0.62
+  m_Direction: 2
+  m_Center: {x: 0, y: 0.21, z: 0}
 --- !u!1 &3824070775663409873
 GameObject:
   m_ObjectHideFlags: 0
@@ -550,7 +565,7 @@ WheelCollider:
     targetPosition: 0.5
   m_SuspensionDistance: 0.02
   m_ForceAppPointDistance: 0.15
-  m_Mass: 20
+  m_Mass: 100
   m_WheelDampingRate: 0.25
   m_ForwardFriction:
     m_ExtremumSlip: 0.4
@@ -699,7 +714,7 @@ WheelCollider:
     targetPosition: 0.5
   m_SuspensionDistance: 0.02
   m_ForceAppPointDistance: 0.15
-  m_Mass: 20
+  m_Mass: 100
   m_WheelDampingRate: 0.25
   m_ForwardFriction:
     m_ExtremumSlip: 0.4
@@ -762,7 +777,7 @@ WheelCollider:
     targetPosition: 0.5
   m_SuspensionDistance: 0.02
   m_ForceAppPointDistance: 0.15
-  m_Mass: 20
+  m_Mass: 100
   m_WheelDampingRate: 0.25
   m_ForwardFriction:
     m_ExtremumSlip: 0.4
