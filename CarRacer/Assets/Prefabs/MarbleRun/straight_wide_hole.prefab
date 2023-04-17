@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1884167998240781206}
   - component: {fileID: 4449872567781295964}
   - component: {fileID: -3381767476357069007}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: straight_wide_hole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2792763889999390345}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
