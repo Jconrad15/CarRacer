@@ -12,6 +12,8 @@ public class BallController : MonoBehaviour
     private Rigidbody rb;
     private int layerMask;
 
+    private bool movementDisabled;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -21,6 +23,8 @@ public class BallController : MonoBehaviour
 
     private void Update()
     {
+        if (movementDisabled) { return; }
+
         if (jumpCooldown > 0)
         {
             jumpCooldown -= Time.deltaTime;
@@ -76,4 +80,21 @@ public class BallController : MonoBehaviour
         return false;
     }
 
+    public void DisableMovement()
+    {
+        movementDisabled = true;
+    }
+
+    public void EnableMovement()
+    {
+        movementDisabled = false;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.TryGetComponent(out Goal goal))
+        {
+            goal.OnPlayerCollideGoal();
+        }
+    }
 }
