@@ -14,11 +14,24 @@ public class BallController : MonoBehaviour
 
     private bool movementDisabled;
 
+    Vector3 savedVelocity;
+    Vector3 savedAngularVelocity;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
         jump = new Vector3(0.0f, jumpHeight, 0.0f);
         layerMask = 1 << 8;
+
+        RaceStarter rc = FindAnyObjectByType<RaceStarter>();
+        rc.RegisterOnRaceStart(OnRaceStart);
+
+        DisableMovement();
+    }
+
+    private void OnRaceStart()
+    {
+        EnableMovement();
     }
 
     private void Update()
@@ -65,13 +78,6 @@ public class BallController : MonoBehaviour
     {
         Ray ray = new Ray(transform.position, Vector3.down);
 
-        /*
-         Debug.DrawRay(
-            transform.position,
-            Vector3.down,
-            Color.red,
-            4);*/
-
         if (Physics.Raycast(ray, groundDistance, layerMask))
         {
             return true;
@@ -82,11 +88,17 @@ public class BallController : MonoBehaviour
 
     public void DisableMovement()
     {
+        savedVelocity = rb.velocity;
+        savedAngularVelocity = rb.angularVelocity;
+        rb.isKinematic = true;
         movementDisabled = true;
     }
 
     public void EnableMovement()
     {
+        rb.isKinematic = false;
+        rb.AddForce(savedVelocity, ForceMode.VelocityChange);
+        rb.AddTorque(savedAngularVelocity, ForceMode.VelocityChange);
         movementDisabled = false;
     }
 

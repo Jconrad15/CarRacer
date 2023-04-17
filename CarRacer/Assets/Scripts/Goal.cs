@@ -6,7 +6,6 @@ public class Goal : MonoBehaviour
 {
     public void OnPlayerCollideGoal()
     {
-        Debug.Log("Player reached the goal");
         Timer.Instance.StopTimer();
     }
 }
