@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BallController : MonoBehaviour
@@ -55,7 +53,6 @@ public class BallController : MonoBehaviour
             return;
         }
 
-        Debug.Log("Jump");
         rb.AddForce(jump);
         jumpCooldown = jumpCoolDownLength;
     }
