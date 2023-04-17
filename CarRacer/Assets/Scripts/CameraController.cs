@@ -8,6 +8,8 @@ public class CameraController : MonoBehaviour
 
     private Vector3 offset;
 
+    private float distance;
+
     private void Start()
     {
         offset = transform.position - player.transform.position;

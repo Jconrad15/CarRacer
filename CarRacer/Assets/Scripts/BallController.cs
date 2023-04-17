@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class BallController : MonoBehaviour
 {
-    private float speed = 500f;
-    private float jumpHeight = 30000f;
+    private float speed = 400f;
+    private float jumpHeight = 100f;
     private float groundDistance = 0.55f;
     private Vector3 jump;
     private readonly float jumpCoolDownLength = 0.2f;
-    private float jumpCooldown;
+    private float jumpCooldown = 0;
 
     private Rigidbody rb;
     private int layerMask;
@@ -55,8 +55,8 @@ public class BallController : MonoBehaviour
             return;
         }
 
-        //Debug.Log("Jump");
-        rb.AddForce(Time.deltaTime * jump);
+        Debug.Log("Jump");
+        rb.AddForce(jump);
         jumpCooldown = jumpCoolDownLength;
     }
 
