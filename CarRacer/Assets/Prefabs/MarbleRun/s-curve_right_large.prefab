@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1822014789892617639}
   - component: {fileID: 4516529358736605549}
   - component: {fileID: -4784088630957318708}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: s-curve_right_large
   m_TagString: Untagged
   m_Icon: {fileID: 0}

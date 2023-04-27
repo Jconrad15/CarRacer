@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class BallController : MonoBehaviour
 {
-    private float speed = 400f;
+    private float speed = 500f;
     private float jumpHeight = 150f;
     private float groundDistance = 0.6f;
     private Vector3 jump;

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1471794757040327145}
   - component: {fileID: 3713264903092124963}
   - component: {fileID: -6282304085330170729}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: rampStart_A
   m_TagString: Untagged
   m_Icon: {fileID: 0}

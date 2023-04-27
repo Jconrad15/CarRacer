@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5740052580576090221}
   - component: {fileID: 7515439194972204199}
   - component: {fileID: -7092494721642710687}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: straight_hole
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8692656245629103463}
   - component: {fileID: 6865301698405816749}
   - component: {fileID: 3867790151796066971}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: helix_half_left
   m_TagString: Untagged
   m_Icon: {fileID: 0}

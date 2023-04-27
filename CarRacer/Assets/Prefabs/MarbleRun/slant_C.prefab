@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2159057578294988336}
   - component: {fileID: 4184534702988966650}
   - component: {fileID: 6157251355249390300}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: slant_C
   m_TagString: Untagged
   m_Icon: {fileID: 0}

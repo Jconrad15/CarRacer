@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6643645438302217262}
   - component: {fileID: 8923336317932474596}
   - component: {fileID: -8616118301701275018}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: end_hole_square
   m_TagString: Untagged
   m_Icon: {fileID: 0}

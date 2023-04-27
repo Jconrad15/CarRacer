@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9173990809460048821}
   - component: {fileID: 6391847299487659903}
   - component: {fileID: -4357473281878825666}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: funnel_long
   m_TagString: Untagged
   m_Icon: {fileID: 0}

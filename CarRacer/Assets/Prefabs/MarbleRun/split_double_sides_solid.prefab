@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1259631102861448822}
   - component: {fileID: 3936124743769907900}
   - component: {fileID: -6780811865851521478}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: split_double_sides_solid
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8085879079520408945}
   - component: {fileID: 6328163751849845179}
   - component: {fileID: 8242975220392011074}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: bend_solid_large
   m_TagString: Untagged
   m_Icon: {fileID: 0}

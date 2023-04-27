@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8944428665798940284}
   - component: {fileID: 6612420266290356918}
   - component: {fileID: 5806258254386168511}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: slan_long_D
   m_TagString: Untagged
   m_Icon: {fileID: 0}

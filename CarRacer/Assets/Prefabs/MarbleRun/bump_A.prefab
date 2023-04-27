@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2833166131649244089}
   - component: {fileID: 51117257254641523}
   - component: {fileID: -3043826269472741937}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: bump_A
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3531565297445367591}
   - component: {fileID: 1650099379601873901}
   - component: {fileID: 1372317506175524516}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wave_A
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5300983629148834600}
   - component: {fileID: 7959012622341455842}
   - component: {fileID: -4322738651497592080}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: s-curve_short_left_A
   m_TagString: Untagged
   m_Icon: {fileID: 0}

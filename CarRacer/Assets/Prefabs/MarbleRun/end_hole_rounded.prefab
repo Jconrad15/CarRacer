@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2627927973810782628}
   - component: {fileID: 260278421703964014}
   - component: {fileID: -8651430689020348085}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: end_hole_rounded
   m_TagString: Untagged
   m_Icon: {fileID: 0}

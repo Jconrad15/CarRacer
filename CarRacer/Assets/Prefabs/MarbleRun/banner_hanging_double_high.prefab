@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 841353161712232191}
   - component: {fileID: 3191329715484004917}
   - component: {fileID: 5918844397151892557}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: banner_hanging_double_high
   m_TagString: Untagged
   m_Icon: {fileID: 0}
