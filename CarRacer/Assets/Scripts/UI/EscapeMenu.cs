@@ -9,14 +9,26 @@ public class EscapeMenu : MonoBehaviour
 
     private BallController bc;
 
+    private bool canToggle = false;
+
     private void Start()
     {
         bc = FindAnyObjectByType<BallController>();
         menu.SetActive(false);
+
+        RaceStarter rs = FindAnyObjectByType<RaceStarter>();
+        rs.RegisterOnRaceStart(OnRaceStart);
+    }
+
+    private void OnRaceStart()
+    {
+        canToggle = true;
     }
 
     private void Update()
     {
+        if (canToggle == false) { return; }
+
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             ToggleMenu();
@@ -37,6 +49,11 @@ public class EscapeMenu : MonoBehaviour
             bc.DisableMovement();
             Timer.Instance.StopTimer();
         }
+    }
+
+    public void TurnOffAbilityToToggle()
+    {
+        canToggle = false;
     }
 
 }
