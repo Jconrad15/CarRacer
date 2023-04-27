@@ -18,11 +18,18 @@ public class EscapeMenu : MonoBehaviour
 
         RaceStarter rs = FindAnyObjectByType<RaceStarter>();
         rs.RegisterOnRaceStart(OnRaceStart);
+
+        FindAnyObjectByType<FallDetector>().RegisterOnDeath(OnDeath);
     }
 
     private void OnRaceStart()
     {
         canToggle = true;
+    }
+
+    private void OnDeath()
+    {
+        canToggle = false;
     }
 
     private void Update()
@@ -49,11 +56,6 @@ public class EscapeMenu : MonoBehaviour
             bc.DisableMovement();
             Timer.Instance.StopTimer();
         }
-    }
-
-    public void TurnOffAbilityToToggle()
-    {
-        canToggle = false;
     }
 
 }

@@ -26,7 +26,7 @@ public class BallController : MonoBehaviour
         RaceStarter rc = FindAnyObjectByType<RaceStarter>();
         rc.RegisterOnRaceStart(OnRaceStart);
         FindAnyObjectByType<Goal>().RegisterOnReachGoal(OnReachGoal);
-
+        FindAnyObjectByType<FallDetector>().RegisterOnDeath(OnDeath);
         DisableMovement();
     }
 
@@ -36,6 +36,11 @@ public class BallController : MonoBehaviour
     }
 
     private void OnReachGoal()
+    {
+        DisableMovement();
+    }
+
+    private void OnDeath()
     {
         DisableMovement();
     }

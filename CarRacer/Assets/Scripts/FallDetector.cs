@@ -1,9 +1,12 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class FallDetector : MonoBehaviour
 {
+    private Action cbOnDeath;
+
     [SerializeField]
     private GameObject deathMenu;
 
@@ -17,11 +20,20 @@ public class FallDetector : MonoBehaviour
         if (collision.collider.gameObject.CompareTag("Player"))
         {
             // open death menu
-            FindAnyObjectByType<EscapeMenu>().TurnOffAbilityToToggle();
+            cbOnDeath?.Invoke();
             Timer.Instance.StopTimer();
-            FindAnyObjectByType<BallController>().DisableMovement();
             deathMenu.SetActive(true);
         }
+    }
+
+    public void RegisterOnDeath(Action callbackfunc)
+    {
+        cbOnDeath += callbackfunc;
+    }
+
+    public void UnregisterOnDeath(Action callbackfunc)
+    {
+        cbOnDeath -= callbackfunc;
     }
 
 }
