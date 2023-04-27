@@ -80,7 +80,7 @@ public class BallController : MonoBehaviour
         jumpCooldown = jumpCoolDownLength;
     }
 
-    private bool IsGrounded()
+    public bool IsGrounded()
     {
         Ray ray = new Ray(transform.position, Vector3.down);
 
