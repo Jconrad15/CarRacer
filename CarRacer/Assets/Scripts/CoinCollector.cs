@@ -7,10 +7,10 @@ public class CoinCollector : MonoBehaviour
     private Action<Coin> cbOnCoinCollected;
 
     private int totalPoints;
-    private int TotalPoints
+    public int TotalPoints
     {
         get => totalPoints;
-        set
+        private set
         {
             totalPoints = value;
             cbOnPointsChanged?.Invoke(totalPoints);
