@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1431629932856997191}
   - component: {fileID: 7122160084540091343}
   - component: {fileID: -6613653412571379791}
+  - component: {fileID: 7857947417551896534}
   m_Layer: 8
   m_Name: coinSilver
   m_TagString: Untagged
@@ -113,6 +114,27 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.45, y: 0.5, z: 0.2}
   m_Center: {x: 0, y: 0.19999999, z: 0}
+--- !u!95 &7857947417551896534
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639185307436995730}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5eb0a49abac2af24184be9d392826460, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7360254844455610793
 GameObject:
   m_ObjectHideFlags: 0
