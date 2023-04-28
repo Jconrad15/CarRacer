@@ -18,18 +18,20 @@ public class EndUI : MonoBehaviour
     [SerializeField]
     private GameObject menu;
 
+    private Animator animator;
+
     private void Start()
     {
         FindAnyObjectByType<Goal>().RegisterOnReachGoal(OnReachGoal);
-        menu.SetActive(false);
+        animator = GetComponent<Animator>();
     }
 
     private void OnReachGoal()
     {
+        animator.SetTrigger("Display");
         SetTimeText();
         SetPointsText();
         SetScoreText();
-        menu.SetActive(true);
     }
 
     private void SetTimeText()
